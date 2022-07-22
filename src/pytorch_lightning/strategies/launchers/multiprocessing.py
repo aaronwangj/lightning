@@ -32,7 +32,7 @@ from pytorch_lightning.utilities.types import _PATH
 
 
 class _MultiProcessingLauncher(_Launcher):
-    r"""Spawns processes that run a given function in parallel, and joins them all at the end.
+    r"""Launch processes that run a given function in parallel, and joins them all at the end.
 
     The main process in which this launcher is invoked creates N so-called worker processes (using
     :func:`torch.multiprocessing.start_processes`) that run the given function.
